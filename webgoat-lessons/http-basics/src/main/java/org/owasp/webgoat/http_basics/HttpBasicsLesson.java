@@ -40,7 +40,7 @@ public class HttpBasicsLesson extends AssignmentEndpoint {
         if (!person.isBlank()) {
             return success(this)
                 .feedback("http-basics.reversed")
-                .feedbackArgs(new StringBuilder(person).reverse().toString())
+                .feedbackArgs(new StringBuilder(person).toString())
                 .build();
         } else {
             return failed(this).feedback("http-basics.empty").build();
